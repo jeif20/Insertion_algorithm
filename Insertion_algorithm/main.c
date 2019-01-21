@@ -9,15 +9,15 @@ int const SIZE = 5; //array will only take 5 elements
 int i;
 
 void insertionSort(int A[]){
-    int iMin,key;
+    int j,key;
     for(i=1;i<SIZE;i++){
-        iMin = i;
+        j = i;
         key = A[i];
-        while(iMin>0 && A[iMin-1]>key){
-            A[iMin] = A[iMin-1];
-            iMin = iMin-1;
+        while(j>0 && A[j-1]>key){
+            A[j] = A[j-1];
+            j = j-1;
         }
-        A[iMin] = key;
+        A[j] = key;
     }
     
 }
